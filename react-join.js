@@ -2,10 +2,10 @@ const React = require('react')
 
 module.exports = function ReactJoin(props) {
   var
-    separator = props.separator || ", ",
+    separator = props.separator || ', ',
     children = props.children || null,
     len = children && children.length - 1,
-    isString = typeof separator === "string",
+    isString = typeof separator === 'string',
     isReact = React.isValidElement(separator),
     key = new Date();
 

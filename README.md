@@ -2,6 +2,8 @@
 
 Array.join() for React components.
 
+This component requires React v16.0.0+.
+
 ## Setup
 
 `npm install react-join`

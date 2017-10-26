@@ -1,6 +1,6 @@
 {
   "name": "react-join",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "Array.join() for React components",
   "main": "react-join.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "Tan Nhu",
   "license": "MIT",
   "peerDependencies": {
-    "react": "*"
+    "react": "^16.0.0"
   }
 }
