@@ -8,7 +8,7 @@ Array.join() for React components.
 
 ## Sample
 
-https://codesandbox.io/s/92lr1knk4
+View interactive samples: https://codesandbox.io/s/mq690l2jvp
 
 ```javascript
 import ReactJoin from 'react-join'
@@ -19,9 +19,14 @@ const links = [
   <Link key="linkedin" href="https://linkedin.com" name="LinkedIn"></Link>
 ]
 
-<ReactJoin separator={<span>, </span>}>
-  {links}
-</ReactJoin>
+// Join links by ", " (default)
+<ReactJoin>{links}</ReactJoin>
+
+// Join links by a React component
+<ReactJoin separator={<span>, </span>}>{links}</ReactJoin>
+
+// Join links by a closure that returns a React component
+<ReactJoin separator={index => <span index={index}>, </span>}>{links}</ReactJoin>
 ```
 
 ## License
